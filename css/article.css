@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+/*******	Body	*******/
+* {
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 200%;
+	height: 100%;
+	font-size: 110%;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	background-color: rgb(234, 234, 233);
+}
+
+/******* Titres *******/
+p {
+	color: rgb(77, 87, 77);
+	position: relative;
+	margin: 2vh 0 2vh 0;
+	text-align: justify;
+}
+
+h1 {
+	padding: 9%;
+	font-family: 'Alex Brush';
+	font-size: 400%;
+	float: left;
+}
+
+h2 {
+	font-size: 125%;
+	margin-top: -1em;
+}
+
+h3 {
+	font-size: 110%;
+	margin-top: -0.8em;
+}
+
+h4, h5, h6 {
+	font-size: 90%;
+	margin-top: -0.6em;
+}
+
+/*******	Bordure	*******/
+.bordure {
+	margin-top: 10vh;
+	border-bottom: 1px solid #333;
+}
+
+.bordure_transparent {
+	margin-bottom: 5vh;
+	border-bottom: 1px solid rgb(0,0,0,0);
+}
+
+
+/******* Banner *******/
+#astronomie {
+	background-image: url("../imgs/part_1/slide_1.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+#gastronomie {
+	background-image: url("../imgs/part_2/slide_2.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+#musique {
+	background-image: url("../imgs/part_3/slide_3.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+#nature {
+	background-image: url("../imgs/part_4/slide_4.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+.logo {
+	margin-top: 5vh;
+	width: 15%;
+	float:left;
+}
+
+/*******	Navigation	*******/
+.nav {
+  height: 61px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+	z-index: 100;
+	text-align: center;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-links {
+  display: inline;
+
+}
+
+a {
+	width: 10vw;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#nav-check {
+  display: none;
+}
+
+.sticky {
+    top: 0;
+		width: 100%;
+    position: fixed;
+		text-align: center;
+		box-shadow: 0px 1px 15px #111;
+}
+
+/*******	Flex	*******/
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flex article {
+	width: 45%;
+}
+
+/*******	Inner	*******/
+.inner {
+	max-width: 75vw;
+	margin: 0vh auto;
+	padding: 6vh 0;
+}
+
+.inner header h2,
+.inner header p  {
+	text-align: center;
+	margin: 0 0 8vh 0;
+}
+
+.inner article h3 {
+	text-align: left;
+}
+
+.inner header h2 {
+	font-size: 2.75em;
+	margin: 0 0 .5em 0;
+}
+
+/*******	Image	*******/
+.image {
+	display: inline-block;
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image img {
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+/*******	Button *******/
+.button {
+	transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+	display: inline-block;
+	font-weight: 600;
+	line-height: 2.95em;
+	padding: 0 1.5em;
+	text-decoration: none;
+	color: rgb(234, 234, 233);
+}
+
+.button:hover {
+	background-color: rgb(116, 116, 100);
+}
+
+.button.special {
+	background-color: rgb(145, 167, 162);
+}
+
+.button.special:hover {
+	background-color: rgb(116, 116, 100);
+}
+
+
+/* Tableau */
+table {
+	color:white;
+	text-align:justify;
+	margin: auto;
+}
+
+table th {
+	width: 7em;
+	text-decoration:underline;
+}
+
+/* Footer */
+footer table {
+	background-color:#333;
+	border-color:black;
+	border-width: small;
+	padding:0;
+	text-align: center;
+	width: 100%;
+}
+
+/*******	Media Query	*******/
+@media (max-width:480px) {
+	/*	Banner	*/
+	.banner {
+		background-image: none;
+		background-color: rgb(234, 234, 233);
+		height: 65vh;
+		font-size: 60%;
+	}
+
+	h1 {
+		margin-top:5vh;
+	}
+
+	.logo {
+		margin-top: 5vh;
+		width: 70%;
+	}
+
+	/*	Navigation	*/
+	.nav {
+		  height: 50px;
+			text-align: left;
+	}
+	.nav-btn {
+	  display: inline-block;
+	}
+
+	.nav-links {
+				text-align: center;
+	}
+
+	label {
+	  display: inline-block;
+	  width: 50px;
+	  height: 50px;
+	  padding: 13px;
+	}
+
+	label:hover {
+	  background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	span {
+	  display: block;
+	  width: 25px;
+	  height: 10px;
+	  border-top: 2px solid #eee;
+	}
+
+	.nav-links {
+	  position: absolute;
+	  display: block;
+	  width: 100%;
+	  background-color: #333;
+	  height: 0px;
+	  transition: all 0.3s ease-in;
+	  overflow-y: hidden;
+	  top: 50px;
+	}
+
+	a {
+	  display: block;
+	  width: 100%;
+	}
+
+	#nav-check:not(:checked) {
+	  height: 0px;
+	}
+
+	#nav-check:checked ~ .nav-links {
+	  height: calc(41.5vh);
+	  overflow-y: auto;
+	}
+
+	/*	Inner	*/
+	.inner {
+		max-width: 85%;
+		text-align: center;
+	}
+
+	.button {
+		padding: 0;
+		width: 100%;
+	}
+
+	.image img {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.inner header {
+		margin-bottom: 2em;
+	}
+
+	.inner header h2 {
+		font-size: 2em;
+	}
+
+	.inner header p {
+			font-size: .9em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.flex article {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+
+	.inner {
+		padding: 2em 0;
+	}
+
+	.image img {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.inner {
+		max-width: 90%;
+	}
+}
