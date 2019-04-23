@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+@import "https://fonts.googleapis.com/css?family=Alex+Brush";
 
 /*******	Body	*******/
 * {
@@ -46,7 +47,7 @@ h4, h5, h6 {
 
 /*******	Bordure	*******/
 .bordure {
-	margin-top: 10vh;
+	margin: 5vh 0 5vh 0;
 	border-bottom: 1px solid #333;
 }
 
@@ -119,7 +120,6 @@ h4, h5, h6 {
 
 .nav-links {
   display: inline;
-
 }
 
 a {
@@ -150,28 +150,34 @@ a:hover {
 .flex {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .flex article {
-	width: 45%;
+	width: 100%;
+  margin-bottom: 5vh;
 }
 
 /*******	Inner	*******/
 .inner {
-	max-width: 75vw;
-	margin: 0vh auto;
+	max-width: 45vw;
+	margin: auto;
 	padding: 6vh 0;
 }
 
+.inner p {
+  text-indent: 5vh;
+}
+
 .inner header h2,
-.inner header p  {
+.inner header h3  {
+  font-size: 140%;
 	text-align: center;
-	margin: 0 0 8vh 0;
+	margin: 5vh;
 }
 
 .inner article h3 {
 	text-align: left;
+  margin: 3vh;
 }
 
 .inner header h2 {
@@ -181,15 +187,14 @@ a:hover {
 
 /*******	Image	*******/
 .image {
-	display: inline-block;
-	display: block;
-	margin: 0 0 2em 0;
+  float: left;
+  width: 50%;
+  padding: 0 3vh 0 0;
 }
 
 .image img {
 	border-radius: 10px;
-	width: 100%;
-	text-align: center;
+  width: 100%;
 }
 
 /*******	Button *******/

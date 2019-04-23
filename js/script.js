@@ -26,9 +26,3 @@ $(document).ready(function(){
       .animate({scrollTop: $(target).offset().top}, 1000 );
    });
 });
-
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
-navBarToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('active');
-});
