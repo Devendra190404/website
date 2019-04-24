@@ -1,28 +1,13 @@
-var menu = document.querySelector('.nav');
-var menuPosition = menu.getBoundingClientRect();
-var placeholder = document.createElement('div');
-placeholder.style.width = menuPosition.width + 'px';
-placeholder.style.height = menuPosition.height + 'px';
-var isAdded = false;
-
-window.addEventListener('scroll', function() {
-    if (window.pageYOffset >= menuPosition.top && !isAdded) {
-        menu.classList.add('sticky');
-        menu.parentNode.insertBefore(placeholder, menu);
-        isAdded = true;
-    } else if (window.pageYOffset < menuPosition.top && isAdded) {
-        menu.classList.remove('sticky');
-        menu.parentNode.removeChild(placeholder);
-        isAdded = false;
-    }
-});
-
-$(document).ready(function(){
-    $('a[href^="#"]').click(function(evt){
-      evt.preventDefault();
-      var target = $(this).attr('href');
-      $('html, body')
-      .stop()
-      .animate({scrollTop: $(target).offset().top}, 1000 );
-   });
-});
+function scrollNav() {
+  $('.nav a').click(function(){
+    $(".active").removeClass("active");
+    $(this).closest('li').addClass("active");
+    var theClass = $(this).attr("class");
+    $('.'+theClass).parent('li').addClass('active');
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top }, 700);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();
