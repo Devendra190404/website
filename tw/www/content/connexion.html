@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Inscription</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css" >
+		<link type="text/css" rel="stylesheet" href="css/index.css" >
+	</head>
+	<body style="margin:0; padding:0;">
+
+		<!--	Header
+		--------------------------------->
+		<div class="banner" id="index">
+			<img src="imgs/logo/SFlogo.PNG" alt="Transisor"  class="logo">
+			<h1>N'ayez plus peur d'apprendre</h1>
+		</div>
+
+		<!--	Navigation
+		--------------------------------->
+		<div class="nav">
+		  <input type="checkbox" id="nav-check">
+		  <div class="nav-btn">
+		    <label for="nav-check">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </label>
+		  </div>
+
+		  <div class="nav-links">
+		    <a href="../index.html">Accueil</a>
+		    <a href="astronomie.html">Astronomie</a>
+		    <a href="gastronomie.html">Gastronomie</a>
+		    <a href="musique.html">Musique</a>
+		    <a href="nature.html">Nature</a>
+		  </div>
+		</div>
+
+		<!--	Main   --------------------------------->
+
+		<body>
+			 <form method="get" action="../htbin/register.py" >
+  				First name:<br>
+				  <input type="text" id="firstname" required><br>
+				Last name:<br>
+				  <input type="text" id="lastname" required><br>
+				Birth Date:(dd/mm/yyyy)<br>
+				  <input type="text" id="birthdate"><br>
+				User name:<br>
+				  <input type="text" id="username" required minlength="4"><br>
+				Password:<br>
+				  <input type="password" id="userpdw" required><br>
+				Email:<br>
+				  <input type="text" id="useremail" required><br>
+					<input type="submit" id="envoi">
+			</form> 
+
+		
+
+		</body>
+<script type="text/javascript" src="../js/inscription.js"></script>
+
+
+
+
+
+
