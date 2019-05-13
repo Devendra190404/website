@@ -1,11 +1,3 @@
-# Website
-FOR THE NEXT TIME :
-  - Bannière
-  - articles
-  - optimiser les feuille de styles
-
-
-
-
-
-#dae5e8
+# ATTENTION
+Il ne faut pas remplacer le dossier principal par celui ci !!
+ c'est juste le dossier www a mettre dans l'ensemble
