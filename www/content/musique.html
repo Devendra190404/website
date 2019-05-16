@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Musique</title>
+		<link type="text/css" rel="stylesheet" href="../css/reset.css" >
+		<link type="text/css" rel="stylesheet" href="../css/article.css" >
+		<link type="text/css" href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+	</head>
+	<body style="margin:0; padding:0;">
+
+		<!--	Header
+		--------------------------------->
+		<div id="musique" id="article_1">
+			<img src="../imgs/logo/SFlogo_musique.PNG" alt="Transisor" class="logo">
+			<h1>Musique</h1>
+		</div>
+
+		<!--	Navigation
+		--------------------------------->
+		<div class="nav">
+		  <input type="checkbox" id="nav-check">
+		  <div class="nav-btn">
+		    <label for="nav-check">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </label>
+		  </div>
+
+		  <div class="nav-links">
+		    <a class="js-scrollTo" href="../index.html">Accueil</a>
+		    <a class="js-scrollTo" href="astronomie.html">Astronomie</a>
+		    <a class="js-scrollTo" href="gastronomie.html">Gastronomie</a>
+		    <a class="js-scrollTo" href="musique.html">Musique</a>
+		    <a class="js-scrollTo" href="nature.html">Nature</a>
+		  </div>
+		</div>
+
+
+		<!--	Main
+		--------------------------------->
+		<div class="bordure_transparent" id="article_1"></div>
+		<div class="inner">
+			<header>
+				<h2>À Paris, le jazz revient sur le devant de la scène!</h2>
+				<p></p>
+			</header>
+			<article>
+				<div class="image">
+					<img src="../imgs/part_3/pic_1.jpg" alt="Pic 01" />
+				</div>
+				<p>
+					Entre Paris et le jazz, la java n'est jamais loin. Depuis l'après-guerre, Paname n'aime rien tant qu'à gambiller en rythme, se dandiner librement sur les staccatos endiablés d'une musique qui passe son temps à s'improviser dans l'euphorie et la liberté d'un club ou d'une cave voûtée. Cette «love story» a eu des hauts et des bas.
+
+Entre la trompette de Miles Davis qui ensorcela Jeanne Moreau sur les images d'Ascenseur pour l'échafaud , jusqu'au récent La La Land et sa splendide séquence onirique orchestrée au Caveau de la Huchette, le jazz a connu quelques éclipses à Paris.
+Fièvre jazzy dernier cri
+
+On l'a cru fini, disparu, envolé quand un certain nombre d'adresses sont parties en fumée ou se sont déplacées, comme le Bilboquet, ou le Montana rue Saint-Benoît. C'est pourtant mal connaître l'attrait souterrain exercé par le jazz, ce charme entêtant qui fait résonner le be-bop et le swing quand on s'y attend le moins.
+
+Depuis quelque temps, une nouvelle génération d'amateurs retrouve, redécouvre la joie d'un «bœuf» sur de nouvelles scènes, tel le Bal Blomet, tandis que les anciens lieux, New Morning ou Duc des Lombards, tiennent toujours la note. Le renouveau du jazz à Paris passe également par les bars d'hôtels où se produisent des talents prometteurs. Bref, n'ayons pas peur de claquer des doigts pour mieux prendre la mesure de cette fièvre jazzy dernier cri…
+				</p>
+			</article>
+			<div class="bordure" id="article_2"></div>
+
+			<div class="inner">
+				<header>
+					<h2>Les prémices du heavy metal</h2>
+					<p></p>
+				</header>
+				<article>
+					<div class="image">
+						<img src="../imgs/part_3/pic_2.jpg" alt="Pic 02" />
+					</div>
+					<h3> Black Sabbath
+					<p>
+					Groupe aussi culte que déjanté, ils sont les premiers, historiquement, à désaccorder les instruments pour les rendres plus graves et à utiliser l'accord dit 'du diable', le triton , longtemps jugé trop dur à l'oreille, eux font des morceaux avec.
+					</p>
+					<h3> Ozzy Osbourne <h3>
+					<p>
+					Le chanteur est le personnage qui ressort le plus du lot dans le groupe. Accro à la drogue, il a toujours poussé les délires de plus en plus loin. <br>
+					Pour recituer cette anecdote, aucune maison de disque ne voulait les produire. Lors d'un entretient, il décide d'aller à la réunion avec deux colombes et de les lacher dans la salle de réunion. Il lache la première, tout le monde est émerveillé, mais la deuxième il decide de lui arracher la tête avec les dents.
+					Cette histoire amusait beaucoup les fans, qui à chaque concert par la suite, lanceait des peluches en forme d'oiseau sur scène. Un jour se fût une chauve-souris et il mordit dedans, ce qui lui valu des semaines de traitements contre toutes sortes de maladies. <br>
+					Ce genre d'anecdote est une bannalité pour Ozzy Osbourne
+					</p>
+					<p>
+					C'est sur cette base saine que le heavy metal pris racine
+					</p>
+				</article>
+			</div>
+		</div>
+
+		<!--	Footer
+		--------------------------------->
+		<footer>
+			<div class="foot">
+				<button onclick="document.getElementById('inscription').style.display='block'" style="width:auto;">Sign Up</button>
+
+				<div id="inscription" class="modal">
+				  <span onclick="document.getElementById('inscription').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  <form method="get" class="modal-content" action="../../htbin/register.py">
+				    <div class="container">
+				      <h1>Sign Up</h1>
+				      <p>Please fill in this form to create an account.</p>
+				      <hr>
+							<label for="username"><b>User Name</b></label>
+							<input type="text" placeholder="Enter User Name" id="username" name="username" required minlength="6">
+
+							<label for="firstname"><b>First Name</b></label>
+							<input type="text" placeholder="Enter First Name" id="firstname" name="firstname" required><br>
+
+							<label for="lastname"><b>Last Name</b></label>
+							<input type="text" placeholder="Enter Last Name" id="lastname" name="lastname" required><br>
+
+				      <label for="useremail"><b>Email</b></label>
+				      <input type="text" placeholder="Enter Email" id="useremail" name="useremail" required>
+
+				      <label for="userpwd"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" id="userpdw" name="userpwd" required>
+
+							<label for="birthdate"><b>Birth Date</b></label><br>
+							<input type="text" placeholder="Enter Birth Date" id="birthdate" name="birthdate">
+
+				      <div class="clearfix">
+				        <button type="button" id="envoi" onclick="document.getElementById('inscription').style.display='none'" class="cancelbtn">Cancel</button>
+				        <button type="submit" class="signupbtn">Sign Up</button>
+				      </div>
+				    </div>
+				  </form>
+				</div>
+			</div>
+		</footer>
+
+		<!--	Javascript
+		--------------------------------->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/inscription.js"></script>
+
+	</body>
+</html>

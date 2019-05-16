@@ -1,0 +1,476 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+@import "https://fonts.googleapis.com/css?family=Alex+Brush";
+
+/*******	Body	*******/
+* {
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 200%;
+	height: 100%;
+	font-size: 110%;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+  background-color: rgb(234, 234, 233);
+  margin: 0;
+  padding: 0;
+}
+
+/******* Titres *******/
+p {
+	color: rgb(77, 87, 77);
+	position: relative;
+	margin: 2vh 0 2vh 0;
+	text-align: justify;
+}
+
+h1 {
+	margin-top: 10vh;
+	font-family: 'Alex Brush';
+	font-size: 400%;
+}
+
+@media (max-width:1200px) {
+  h1 {
+		margin-top:5vh;
+	}
+}
+
+h2 {
+	font-size: 125%;
+	margin-top: -1em;
+}
+
+h3 {
+	font-size: 110%;
+	margin-top: -0.8em;
+}
+
+h4, h5, h6 {
+	font-size: 90%;
+	margin-top: -0.6em;
+}
+
+/*******	Bordure	*******/
+.bordure {
+	margin-top: 10vh;
+	border-bottom: 1px solid #333;
+}
+
+.bordure_transparent {
+	margin-bottom: 5vh;
+	border-bottom: 1px solid rgb(0,0,0,0);
+}
+
+@media (max-width:740px) {
+  .bordure {
+    margin-top: 5vh;
+  }
+}
+
+/******* Banner *******/
+.banner {
+	background-image: url("../imgs/slide_0.1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	text-align: center;
+	background-size: cover;
+}
+
+@media (max-width:1200px) {
+  	.banner {
+      height: 65vh;
+      background-position: right;
+    }
+}
+
+@media (orientation: landscape) and (max-width:max-height) {
+  .banner {
+    height: 100vh;
+  }
+}
+
+.logo {
+	margin-top: 5vh;
+	width: 25%;
+}
+
+@media (min-width:530px) and (max-width:1200px) {
+  .logo {
+    width: 300px;
+  }
+}
+
+@media (orientation: landscape) and (max-width:1200px){
+  .logo {
+    width:200px;
+  }
+}
+
+@media handheld and (max-width:530px) {
+	.logo {
+		width: 200px;
+	}
+}
+
+/*******	Navigation	*******/
+.nav {
+  background-color: #4d4d4d;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-links {
+  display: inline;
+}
+
+ a {
+	width: 10vw;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#nav-check {
+  display: none;
+}
+
+@media (min-width:530px) and (max-width:1200px) {
+  .nav a {
+    width:19vw;
+  }
+}
+
+@media handheld and (max-width:530px) {
+	.nav {
+		  height: 50px;
+			text-align: left;
+	}
+
+	.nav-btn {
+	  display: inline-block;
+	}
+
+	.nav-links {
+		text-align: center;
+	}
+
+	label {
+	  display: inline-block;
+	  width: 50px;
+	  height: 50px;
+	  padding: 13px;
+	}
+
+	label:hover {
+	  background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	span {
+	  display: block;
+	  width: 25px;
+	  height: 10px;
+	  border-top: 2px solid #eee;
+	}
+
+	.nav-links {
+	  position: absolute;
+	  display: block;
+	  width: 100%;
+	  background-color: #333;
+	  height: 0px;
+	  transition: all 0.3s ease-in;
+	  overflow-y: hidden;
+	  top: 50px;
+	}
+
+	a {
+	  display: block;
+	  width: 100%;
+	}
+
+	#nav-check:checked ~ .nav-links {
+	  height: calc(307px);
+	  overflow-y: auto;
+	}
+}
+
+.sticky {
+    top: 0;
+		width: 100%;
+    position: fixed;
+		text-align: center;
+		box-shadow: 0px 1px 15px #111;
+}
+
+/*******	Flex	*******/
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flex article {
+	width: 45%;
+}
+
+@media (min-width:740px) and (max-width:1200px) {
+  .flex article {
+    width: 45%;
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width:530px) and (max-width:740px) {
+  .flex article {
+    width: 85%;
+    margin-bottom: 3em;
+    margin:auto;
+  }
+}
+
+@media handheld and (max-width: 530px) {
+	.flex article {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+}
+
+/*******	Inner	*******/
+.inner {
+	max-width: 65vw;
+	margin: 0vh auto;
+	padding: 6vh 0;
+}
+
+.inner header h2,
+.inner header p  {
+	text-align: center;
+	margin: 0 0 8vh 0;
+}
+
+.inner article h3 {
+	text-align: left;
+}
+
+.inner header h2 {
+	font-size: 2.75em;
+	margin: 0 0 .5em 0;
+}
+
+@media (min-width:740px) and (max-width:1200px) {
+  .inner {
+		max-width: 90%;
+	}
+}
+
+@media (min-width:530px) and (max-width:740px) {
+  .inner {
+		max-width: 100%;
+	}
+}
+
+@media (max-width:530px) {
+	.inner {
+		max-width: 85%;
+	}
+}
+
+/*******	Image	*******/
+.image {
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image img {
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+@media (min-width:530px) and (max-width:740px) {
+  .image img {
+  	width: 90%;
+    margin: 5vh;
+  }
+}
+
+@media (max-width:530px) {
+  .image img {
+		text-align: center;
+	}
+}
+
+/*******	Button *******/
+.button {
+	transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+	display: inline-block;
+	font-weight: 600;
+	line-height: 2.95em;
+	padding: 0 1.5em;
+	text-decoration: none;
+	color: rgb(234, 234, 233);
+  background-color: rgb(145, 167, 162);
+  text-align: center;
+}
+
+.button:hover {
+	background-color: rgb(116, 116, 100);
+}
+
+@media (min-width:530px) and (max-width:740px) {
+  .button {
+    width:20vw;
+    margin-bottom: 5vh;
+  }
+}
+
+@media handheld and (max-width:530px) {
+	.button {
+		padding: 0;
+		width: 100%;
+	}
+}
+
+/******* Footer *******/
+footer .foot{
+  width: 100%;
+  padding:2vh;
+  background-color: #333;
+  float:left;
+  text-align: center;
+}
+
+footer p {
+  color: #333;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+footer h1 {
+  text-align:center;
+  margin: 5vh;
+}
+
+
+/*****************TEST********************/
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background:rgba(0,0,0,0.5);
+  padding-top: 50px;
+  text-align: left;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
