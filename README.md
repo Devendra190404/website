@@ -1,11 +1,5 @@
 # Website
-FOR THE NEXT TIME :
-  - Bannière
-  - articles
-  - optimiser les feuille de styles
+Version serveur :
+Nabato-patch-1
 
-
-
-
-
-#dae5e8
+Also see : https://nabato.github.io/website/
