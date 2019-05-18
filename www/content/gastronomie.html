@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gastronomie</title>
+		<link type="text/css" rel="stylesheet" href="../css/reset.css" >
+		<link type="text/css" rel="stylesheet" href="../css/index.css" >
+		<link type="text/css" rel="stylesheet" href="../css/article.css" >
+		<link type="text/css" href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+	</head>
+	<body style="margin:0; padding:0;">
+
+		<!--	Header
+		--------------------------------->
+		<div id="gastronomie" id="article_1">
+			<img src="../imgs/logo/SFlogo_gastronomie.PNG" alt="Transisor" class="logo">
+			<h1>Gastronomie</h1>
+		</div>
+
+		<!--	Navigation
+		--------------------------------->
+		<div class="nav">
+		  <input type="checkbox" id="nav-check">
+		  <div class="nav-btn">
+		    <label for="nav-check">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </label>
+		  </div>
+
+		  <div class="nav-links">
+		    <a class="js-scrollTo" href="../index.html">Accueil</a>
+		    <a class="js-scrollTo" href="astronomie.html">Astronomie</a>
+		    <a class="js-scrollTo" href="gastronomie.html">Gastronomie</a>
+		    <a class="js-scrollTo" href="musique.html">Musique</a>
+		    <a class="js-scrollTo" href="nature.html">Nature</a>
+		  </div>
+		</div>
+
+
+		<!--	Main
+		--------------------------------->
+		<div class="bordure_transparent" id="article_1"></div>
+		<div class="inner">
+			<header>
+				<h2>Fêter les rois</h2>
+				<h3>La tradition de la galette</h3>
+			</header>
+			<article>
+				<div class="image">
+					<img src="../imgs/part_2/pic_1.jpg" alt="Pic 01" />
+				</div>
+				<p>
+					La galette des rois est une tradition chrétienne. La recette est la même dans la quasi totalitée de la France, elle est composée d’une pâte feuilletée fourrée de frangipane et contenant une fève.
+				</p>
+				<h3>Anecdote</h3>
+				<p>
+					Aux Etats-Unis, de nombreux pâtissiers vendent le king cake sans fève. Cela afin d’éviter tout procès potentiel ! Et oui, les Etats-Unis est connu pour être un pays où l’on peut faire un procès pour un café trop chaud alors imaginez un peu si vous vous étouffez avec une fève ! Les pâtissiers vendent donc la fève séparément avec une note explicative.
+				</p>
+				</br>
+				<p>
+					Aujourd’hui, la traditionnelle recette est un peu oubliée pour laisser place à differentes variétées : au chocolat, à la pistache,etc.  Certaines marques en profite pour eux aussi cacher des fèves dans leur gateaux. C'est une tradition collectives et très encré en France.</p>
+			</article>
+			<div class="bordure" id="article_2"></div>
+
+			<div class="inner">
+				<header>
+					<h2>La baguette</h2>
+					<h3>Un patrimoine mondial</h3>
+					<p></p>
+				</header>
+				<article>
+					<div class="image">
+						<img src="../imgs/part_2/pic_2.jpg" alt="Pic 02" />
+					</div>
+					<h3> L'histoire de la baguette</h3>
+					<p>
+					Il n'y a pas de grand créateur, le pain était rond afin d'augmenté sa conservation mais une des théories de la forme allongés de la baguette est pour le transport dans les affaires des soldats sous Napoléon Ier.
+					</p>
+					<h3> La recette </h3>
+					<p>
+					Pour créer la pâte il faut 600g d'eau pour un kilo de farine. On rajoute 18g de sel par kilo de farine. <br>
+					La cuisson est assez approximative, en fonction du poids et de la cuisson preférée le temps peut varié de 20 minutes à 30 minutes.
+					</p>
+					<table>
+						<tr><th>Ingredient </th> <th> Quantités </th></tr>
+						<tr><td> Farine </td> <td> 1 kilo </td></tr>
+						<tr><td> Eau </td> <td> 600 g </td></tr>
+						<tr><td> Sel </td> <td> 18 g </td></tr>
+						<tr><td> Temps de cuisson :</td> <td> 20-30 min </td></tr>
+					</table>
+					<p>
+					<h3> De nos jours </h3>
+					<p>
+					La baguette est maintenant devenue un symbole français de la force gastronomie française. Le savoir faire culinaire français reste très envié partout dans le monde. Elle est fabriqué dans le monde entier. C'est un des rares produits encore fabriqués par des artisants.
+					</p>
+					<p>
+					Petit conseil, si vous écrasé une baguette et qu'elle reprend sa forme c'est un signe de qualité.
+					</p>
+				</article>
+			</div>
+		</div>
+
+		<!--	Footer
+		--------------------------------->
+		<footer>
+			<div class="foot">
+				<button onclick="document.getElementById('inscription').style.display='block'" style="width:auto;">Sign Up</button>
+
+				<div id="inscription" class="modal">
+				  <span onclick="document.getElementById('inscription').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  <form method="get" class="modal-content" action="../../htbin/register.py">
+				    <div class="container">
+				      <h1>Sign Up</h1>
+				      <p>Please fill in this form to create an account.</p>
+				      <hr>
+							<label for="username"><b>User Name</b></label>
+							<input type="text" placeholder="Enter User Name" id="username" name="username" required minlength="6">
+
+							<label for="firstname"><b>First Name</b></label>
+							<input type="text" placeholder="Enter First Name" id="firstname" name="firstname" required><br>
+
+							<label for="lastname"><b>Last Name</b></label>
+							<input type="text" placeholder="Enter Last Name" id="lastname" name="lastname" required><br>
+
+				      <label for="useremail"><b>Email</b></label>
+				      <input type="text" placeholder="Enter Email" id="useremail" name="useremail" required>
+
+				      <label for="userpwd"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" id="userpdw" name="userpwd" required>
+
+							<label for="birthdate"><b>Birth Date</b></label><br>
+							<input type="text" placeholder="Enter Birth Date" id="birthdate" name="birthdate">
+
+				      <div class="clearfix">
+				        <button type="button" onclick="document.getElementById('inscription').style.display='none'" class="cancelbtn">Cancel</button>
+				        <button type="submit" class="signupbtn">Sign Up</button>
+				      </div>
+				    </div>
+				  </form>
+				</div>
+			</div>
+		</footer>
+
+		<!--	Javascript
+		--------------------------------->
+		<script type="text/javascript" src="../js/inscription.js"></script>
+
+
+	</body>
+</html>

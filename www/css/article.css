@@ -1,0 +1,228 @@
+/******* Titres *******/
+h1 {
+	padding: 8%;
+	font-family: 'Alex Brush';
+	font-size: 400%;
+	float: left;
+  margin-top: 2%;
+}
+
+@media (max-width:1200px) {
+  h1 {
+		margin-top:0;
+    float:none;
+    padding: 20px;
+	}
+}
+
+/*******	Bordure	*******/
+.bordure {
+	margin: 5vh 0 5vh 0;
+	border-bottom: 1px solid #333;
+}
+
+/******* Banner *******/
+#astronomie {
+	background-image: url("../imgs/part_1/slide_1.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+#gastronomie {
+	background-image: url("../imgs/part_2/slide_2.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+#musique {
+	background-image: url("../imgs/part_3/slide_3.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+#nature {
+	background-image: url("../imgs/part_4/slide_4.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	height: 45vh;
+	text-align: center;
+	background-size: cover;
+}
+
+@media (orientation: landscape) {
+  .banner {
+    height: 100vh;
+  }
+}
+
+.logo {
+	margin-top: 5vh;
+	width: 15%;
+	float:left;
+}
+
+@media (max-width:1200px) {
+  .logo {
+    width: 200px;
+    float:none;
+  }
+}
+
+/*******	Flex	*******/
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex article {
+	width: 100%;
+  margin-bottom: 5vh;
+}
+
+@media (min-width:620px) and (max-width:1200px) {
+  .flex article {
+    width: 45%;
+    margin-bottom: 3em;
+  }
+}
+
+@media (max-width: 620px) {
+	.flex article {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+}
+
+/*******	Inner	*******/
+.inner {
+	max-width: 60vw;
+	margin: auto;
+	padding: 6vh 0;
+}
+
+.inner p {
+  text-indent: 5vh;
+}
+
+.inner header h2,
+.inner header h3  {
+  font-size: 140%;
+	text-align: center;
+	margin: 5vh;
+}
+
+.inner article h3 {
+	text-align: left;
+  margin: 3vh;
+}
+
+.inner header h2 {
+	font-size: 2.75em;
+	margin: 0 0 .5em 0;
+}
+
+@media (min-width:620px) and (max-width:1200px) {
+  .inner {
+		max-width: 90%;
+	}
+}
+
+@media (max-width:620px) {
+	.inner {
+		max-width: 85%;
+	}
+}
+
+
+/*******	Tableau *******/
+table {
+  border: medium solid #6495ed;
+  border-collapse: collapse;
+  width: 50%;
+}
+th {
+  text-align: center;
+  border: thin solid #6495ed;
+  width: 50%;
+  padding: 5px;
+  background-color: #D0E3FA;
+}
+td {
+  border: thin solid #6495ed;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+iframe {
+	width:100%;
+	height:315px;
+	border-radius: 15px;
+}
+
+/*******	Image	*******/
+.image {
+  float: left;
+  width: 50%;
+  padding: 0 3vh 0 0;
+}
+
+.image img {
+	border-radius: 10px;
+  width: 100%;
+}
+
+@media (min-width:620px) and (max-width:740px) {
+  .image img {
+  	width: 90%;
+    margin: auto 2vh;
+  }
+}
+
+@media (max-width:620px) {
+  .image {
+    float:none;
+    width: 100%;
+  }
+
+  .image img {
+		text-align: center;
+	}
+}
+
+/******* Footer *******/
+footer .foot{
+  width: 100%;
+  padding:2vh;
+  background-color: #333;
+  float:left;
+  text-align: center;
+}
+
+footer p {
+  color: #333;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 13vh;
+}
+
+footer h1 {
+  text-align:center;
+  width:100%;
+  padding:0;
+}
