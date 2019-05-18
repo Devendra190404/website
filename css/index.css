@@ -13,6 +13,8 @@ body {
 	font-size: 110%;
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
   background-color: rgb(234, 234, 233);
+  margin: 0;
+  padding: 0;
 }
 
 /******* Titres *******/
@@ -78,17 +80,11 @@ h4, h5, h6 {
 	background-size: cover;
 }
 
-@media (max-width:1200px) {
+@media screen and (max-width:1200px) {
   	.banner {
       height: 65vh;
       background-position: right;
     }
-}
-
-@media (orientation: landscape) and (max-width:max-height) {
-  .banner {
-    height: 100vh;
-  }
 }
 
 .logo {
@@ -96,7 +92,7 @@ h4, h5, h6 {
 	width: 25%;
 }
 
-@media (min-width:530px) and (max-width:1200px) {
+@media screen and (min-width:530px) and (max-width:1200px) {
   .logo {
     width: 300px;
   }
@@ -108,7 +104,7 @@ h4, h5, h6 {
   }
 }
 
-@media (max-width:530px) {
+@media screen and (max-width:530px) {
 	.logo {
 		width: 200px;
 	}
@@ -133,7 +129,7 @@ h4, h5, h6 {
 }
 
  a {
-	width: 10vw;
+	width: 9vw;
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
@@ -148,13 +144,13 @@ a:hover {
   display: none;
 }
 
-@media (min-width:530px) and (max-width:1200px) {
+@media screen and (min-width:530px) and (max-width:1200px) {
   .nav a {
     width:19vw;
   }
 }
 
-@media (max-width:530px) {
+@media screen and (max-width:530px) {
 	.nav {
 		  height: 50px;
 			text-align: left;
@@ -242,7 +238,7 @@ a:hover {
   }
 }
 
-@media (max-width: 530px) {
+@media screen and (max-width: 530px) {
 	.flex article {
 		width: 100%;
 		margin-bottom: 3em;
@@ -338,7 +334,7 @@ a:hover {
   }
 }
 
-@media (max-width:530px) {
+@media handheld and (max-width:530px) {
 	.button {
 		padding: 0;
 		width: 100%;
@@ -346,65 +342,119 @@ a:hover {
 }
 
 /******* Footer *******/
-footer {
+footer .foot{
   width: 100%;
-  height: 8vh;
+  padding:2vh;
+  background-color: #333;
+  float:left;
+  text-align: center;
 }
 
 footer p {
-  padding-left: 10%;
-  color: white;
+  color: #333;
   font-size: 0.7em;
-  text-transform: capitalize;
   letter-spacing: 1px;
+  text-align: center;
 }
 
-footer a {
- float: left;
- text-decoration: none;
- color: white;
- text-align: center;
- font-weight: bold;
+footer h1 {
+  text-align:center;
+  width:100%;
+  margin-top:6%;
 }
 
-.copyright {
-  width: 50%;
-  height:100%;
+/******* Inscription *******/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
   float: left;
-  background-color: #888;
-}
-
-.social {
   width: 50%;
-  height:100%;
-  float: right;
-  background-color: #333;
 }
 
-.linked {
-  background-color: #1E83AE;
-  font-size:1.2em;
-  width: 20%;
-  height: 100%;
+.container {
+  padding: 16px;
 }
 
-.face {
-  background-color: #3D5B94;
-  font-size: 1.2em;
-  width: 20%;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+  overflow: auto;
+  background:rgba(0,0,0,0.5);
+  padding-top: 50px;
+  text-align: left;
 }
 
-.tweet {
-  background-color: #3DACDD;
-  font-size: 1.2em;
-  width: 20%;
-  height: 100%;
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 50%;
 }
 
-.support {
-  background-color: #6dcd9a;
-  font-size: 0.8em;
-  width: 40%;
-  height: 100%;
+hr {
+  border: 1px solid #f1f1f1;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
 }
